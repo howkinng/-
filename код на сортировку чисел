@@ -1,0 +1,5 @@
+import random
+
+swag= (random.randint(10000000,50000000))
+print(swag)
+print ((lambda x: x %2 and 'Это нечетное число !' or "Это четное число!")(swag))

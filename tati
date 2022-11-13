@@ -1,6 +1,6 @@
-language_US =  'ABCDEFGHIJKLMNOPQRSTUVWAYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
-bumping = int(input('Шаг шифровки: '))
-message = input("Сообщение для ДЕшифровки: ").upper()
+language_US =  'ABCDEFGHIJKLMNOPQRSTUVWAYZABCDEFGHIJKLMNOPQRSTUVWXYZ'  #задаём язык
+bumping = int(input('Шаг шифровки: ')) #указываем значение отступа к предыдущей(следующей) букве алфавита
+message = input("Сообщение для ДЕшифровки: ").upper() #Задаем любое слово, значение поменяется на выбранный отступ из 2 строки
 result = ''
 
 if language_US:
@@ -11,6 +11,6 @@ if language_US:
             result += language_US[new_place]
         else:
             result += i
-else:
+else: #при какой либо ошибке цикла выдаёт данное сообщение
    print("Whoops!Error :(")
 print (result)

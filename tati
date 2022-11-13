@@ -1,0 +1,16 @@
+language_US =  'ABCDEFGHIJKLMNOPQRSTUVWAYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+bumping = int(input('Шаг шифровки: '))
+message = input("Сообщение для ДЕшифровки: ").upper()
+result = ''
+
+if language_US:
+    for i in message:
+        place = language_US.find(i)
+        new_place = place + bumping
+        if i in language_US:
+            result += language_US[new_place]
+        else:
+            result += i
+else:
+   print("Whoops!Error :(")
+print (result)
